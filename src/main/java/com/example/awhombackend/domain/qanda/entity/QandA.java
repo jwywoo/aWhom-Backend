@@ -1,5 +1,6 @@
-package com.example.awhombackend.domain.persona.entity;
+package com.example.awhombackend.domain.qanda.entity;
 
+import com.example.awhombackend.domain.persona.entity.Persona;
 import com.example.awhombackend.global.entity.Timestamped;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -8,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Getter
 @NoArgsConstructor
-public class Persona extends Timestamped {
+public class QandA extends Timestamped {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -16,6 +17,9 @@ public class Persona extends Timestamped {
     @Column(name = "user_id", nullable = false)
     private Long userId;
 
-    @Column(name = "persona_name", nullable = false)
-    private String personaName;
+    @Column(name = "question", nullable = false)
+    private String question;
+
+    @Column(name = "answer", nullable = false)
+    private String answer;
 }
