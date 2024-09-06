@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Getter
 @NoArgsConstructor
-public class QandA extends Timestamped {
+public class QandA{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

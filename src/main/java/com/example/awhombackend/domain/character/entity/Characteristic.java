@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Getter
 @NoArgsConstructor
-public class Characteristic extends Timestamped {
+public class Characteristic{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,10 +21,4 @@ public class Characteristic extends Timestamped {
 
     @Column(name= "character_value", nullable = false)
     private String characterValue;
-
-    public Characteristic(Long userId, String characterKey, String characterValue) {
-        this.userId = userId;
-        this.characterKey = characterKey;
-        this.characterValue = characterValue;
-    }
 }
