@@ -1,13 +1,14 @@
-package com.example.awhombackend.domain.character.entity;
+package com.example.awhombackend.domain.characteristic.entity;
 
-import com.example.awhombackend.global.entity.Timestamped;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Entity
 @Getter
 @NoArgsConstructor
+@Document("characteristics_prompt")
 public class Characteristic{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

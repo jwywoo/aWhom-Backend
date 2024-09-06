@@ -5,10 +5,12 @@ import com.example.awhombackend.global.entity.Timestamped;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Entity
 @Getter
 @NoArgsConstructor
+@Document("qanda_prompt")
 public class QandA{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -1,6 +1,6 @@
 package com.example.awhombackend.domain.persona.dto;
 
-import com.example.awhombackend.domain.character.entity.Characteristic;
+import com.example.awhombackend.domain.characteristic.entity.Characteristic;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;

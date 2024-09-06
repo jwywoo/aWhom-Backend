@@ -1,6 +1,6 @@
 package com.example.awhombackend.domain.relations.entity;
 
-import com.example.awhombackend.domain.character.entity.Characteristic;
+import com.example.awhombackend.domain.characteristic.entity.Characteristic;
 import com.example.awhombackend.domain.persona.entity.Persona;
 import com.example.awhombackend.global.entity.Timestamped;
 import jakarta.persistence.*;
